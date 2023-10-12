@@ -9,7 +9,7 @@ Before proceeding with tmux configuration, make sure you have installed the foll
 ## Fixing the "tmux: need UTF-8 locale (LC_CTYPE) but have ANSII" error
 If you encounter the "tmux: need UTF-8 locale (LC_CTYPE) but have ANSII" error, follow these steps:
 
-1. In `var/jb/usr/share/locale/UTF-8`, replace the existing LC_CTYPE file with the one from this repository, as the one from Procursus is empty.
+1. In `var/jb/usr/share/locale/UTF-8`, replace the existing LC_CTYPE file with the [one from this repository](https://github.com/pedromopi/tmux/blob/main/LC_CTYPE), as the one from Procursus is empty.
 2. In `var/jb/usr/etc`, add the following lines to the "profile" file:
 
 `export LC_CTYPE=UTF-8`

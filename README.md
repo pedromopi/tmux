@@ -31,6 +31,9 @@ With these steps completed, tmux should work as expected and you can run in NewT
 
 `tmux -u new-session -s MySessionName`
 
+> **Note**
+> MySessionName can be any name you want.
+
 ## Still Encountering Problems?
 
 If, after logging in with 'su' and your password, you are still facing issues, you can check if the previously defined variables are available by running the "env" command in NewTerm. You should see the variables listed. If they do not appear, you can set them manually by using the following commands:
@@ -38,10 +41,8 @@ If, after logging in with 'su' and your password, you are still facing issues, y
 ````
 export LC_CTYPE=UTF-8
 export TMUX_TMPDIR=/var/mobile/Documents/tmp
-tmux -u new-session -s py
+tmux -u new-session -s MySessionName
 ````
-
-
 
 
 
